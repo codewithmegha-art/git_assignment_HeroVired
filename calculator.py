@@ -15,8 +15,12 @@ class Calculator:
             raise ValueError("Cannot divide by zero.")
         return a / b
 
+    # add sqrt funciton
     def square_root(self, x):
-        return math.sqrt(x)
+     if x < 0:
+        raise ValueError("Cannot compute square root of a negative number.")
+     return math.sqrt(x)
+
 
 if __name__ == "__main__":
     calculator = Calculator()
