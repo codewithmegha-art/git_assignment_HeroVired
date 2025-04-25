@@ -1,6 +1,7 @@
 import math
 
 class Calculator:
+
     def add(self, a, b):
         return a + b
 
@@ -11,17 +12,9 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
-        if b == 0:
-            raise ValueError("Cannot divide by zero.")
         return a / b
 
-    # add sqrt funciton
-    def square_root(self, x):
-     if x < 0:
-        raise ValueError("Cannot compute square root of a negative number.")
-     return math.sqrt(x)
-
-
+    
 if __name__ == "__main__":
     calculator = Calculator()
     num1 = 16
@@ -32,5 +25,4 @@ if __name__ == "__main__":
     print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
     print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
 
-    num3 = 25
-    print(f"The square root of {num3} = {calculator.square_root(num3)}")
+   
